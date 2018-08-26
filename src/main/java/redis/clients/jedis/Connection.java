@@ -295,7 +295,7 @@ public class Connection implements Closeable {
     return broken;
   }
 
-  protected void flush() {
+  public void flush() {
     try {
       outputStream.flush();
     } catch (IOException ex) {
