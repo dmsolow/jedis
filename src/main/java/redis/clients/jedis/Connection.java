@@ -304,7 +304,7 @@ public class Connection implements Closeable {
     }
   }
 
-  protected Object readProtocolWithCheckingBroken() {
+  public Object readProtocolWithCheckingBroken() {
     try {
       return Protocol.read(inputStream);
     } catch (JedisConnectionException exc) {
